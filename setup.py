@@ -11,17 +11,16 @@ with open('telebot/version.py', 'r', encoding='utf-8') as f:  # Credits: LonamiW
     version = re.search(r"^__version__\s*=\s*'(.*)'.*$",
                         f.read(), flags=re.MULTILINE).group(1)
 
-setup(name='pyTelegramBotAPI',
+setup(name='cidropBotAPI',
       version=version,
-      description='Python Telegram bot api. ',
+      description='Consultorio Dr. Omar Prieto Telegram bot api. ',
       long_description=read('README.md'),
       long_description_content_type="text/markdown",
-      author='eternnoir',
-      author_email='eternnoir@gmail.com',
-      url='https://github.com/eternnoir/pyTelegramBotAPI',
+      author='elmunyeco',
+      author_email='elyecomun@gmail.com',
+      url='https://github.com/elmunyeco/cidropTelegramBotAPI',
       packages=['telebot'],
-      license='GPL2',
-      keywords='telegram bot api tools',
+      keywords='telegram bot api tools cardiologia integral dr. omar prieto',
       install_requires=['requests'],
       extras_require={
           'json': 'ujson',
@@ -31,6 +30,5 @@ setup(name='pyTelegramBotAPI',
           'Development Status :: 5 - Production/Stable',
           'Programming Language :: Python :: 3',
           'Environment :: Console',
-          'License :: OSI Approved :: GNU General Public License v2 (GPLv2)',
       ]
       )
